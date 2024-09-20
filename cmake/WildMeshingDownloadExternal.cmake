@@ -26,8 +26,8 @@ endfunction()
 
 function(wildmeshing_download_triwild)
     wildmeshing_download_project(triwild
-        GIT_REPOSITORY  https://github.com/wildmeshing/TriWild
-        GIT_TAG         8e9e5ea25b11b346ddb8db8746174153259807d4
+        GIT_REPOSITORY  https://github.com/Hfdxbr/TriWild
+        GIT_TAG         master
     )
 endfunction()
 
@@ -41,7 +41,7 @@ endfunction()
 function(wildmeshing_download_pybind11)
     wildmeshing_download_project(pybind11
         GIT_REPOSITORY https://github.com/pybind/pybind11
-        GIT_TAG        085a29436a8c472caaaf7157aa644b571079bcaa
+        GIT_TAG        master
     )
 endfunction()
 

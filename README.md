@@ -3,14 +3,7 @@
 
 python interface to **triangulate** and **tetrahedralize**
 
-use:
-
+To build wheel use
 ```bash
-python setup.py develop
+python -m pip wheel . -vv
 ```
-
-or 
-```bash
-python -m pip install . -vv
-```
-to install

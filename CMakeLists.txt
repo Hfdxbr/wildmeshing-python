@@ -73,6 +73,8 @@ target_link_libraries(wildmeshing PRIVATE FloatTetwild)
 target_link_libraries(wildmeshing PRIVATE pybind11::module)
 set_target_properties(wildmeshing PROPERTIES PREFIX "${PYTHON_MODULE_PREFIX}" SUFFIX "${PYTHON_MODULE_EXTENSION}")
 
-
+add_custom_command(TARGET wildmeshing POST_BUILD
+    COMMAND ${CMAKE_COMMAND} -E copy ${GMP_BINARY_DIRS}/gmp.dll ${CMAKE_LIBRARY_OUTPUT_DIRECTORY}
+)
 
 
